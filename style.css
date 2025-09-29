@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*  
+#1E2759 Azul escuro
+#3B4FBF Azul yamaha 
+#3B79BF Azul claro
+#C1CED9 Cinza claro
+#A4A698 Cinza Bege
+#D9BA82 bege
+#59503E Marrom
+#26252a Cinza Black
+#b1b0b5 Cinza escuro
+#d8d8da cinza Claro
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url("Banco\ de\ dados/Yamaha (11).jpg");
+    background-repeat: no-repeat;
+    background-size: 100dvh;
+    background-position: center bottom;
+    height: 40vh;
+}
+nav{
+    background-color: #d8d8da;
+    height: 10%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #b1b0b5;
+}
+
+a{
+    margin: 10%;
+    text-decoration: none;
+    color: #26252a;
+}
+body { 
+    background-color: #d8d8da;
+}
+
+main{
+    margin: 20px 0px;
+    padding: 15px;
+    background-image:radial-gradient(circle,Black ,#b1b0b5,#d8d8da 10%)
+}
+
+#H2Main{
+    margin: 10px 0px;
+}
+#H3Main{
+    text-align: justify;
+}
+img{
+    width: 300px;      
+    height: auto;      
+    border-radius: 10px;
+    object-fit: cover; 
+}
+#DivMain{
+    background-color: #d8d8dae0;
+    padding: 1%;
+    margin: 10px 0px ;
+    border: 1px solid  #b1b0b5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+
+}
+
+footer{
+    background-color: #26252a;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
