@@ -51,31 +51,43 @@ nav{
 }
 
 .TopContainer{
-    height: 550px;
+    height: 600px;
     margin: 0px;
 }
 
-#Carrosel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.144);
-    margin: 05px -15px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.199);
-}
-#ImgCarrosel:hover>{
-    transition: 0.3s;
-    transform: scale(1.1);
+.TopContainer h2{
+    margin-bottom: 20px;
 }
 
-#ImgCarrosel{
-    margin: auto;
-    width: 300; /* Largura que você deseja */
-    height: 400px; /* Altura que você deseja */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+#Carrosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.144);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.199);
+}
 
+/* Todas as imagens dentro do carrossel */
+#Carrosel img {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+  transition: opacity 0.25s, transform 0.25s;
+  cursor: pointer;
+}
+
+/* Quando o mouse entra no container, todas as imagens ficam apagadas */
+#Carrosel:hover img {
+  opacity: 0.1;
+}
+
+/* Mas a imagem que está em hover volta ao normal */
+#Carrosel img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 a{
