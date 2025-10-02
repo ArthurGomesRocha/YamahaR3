@@ -59,15 +59,31 @@ nav{
     margin-bottom: 20px;
 }
 
-#Carrosel {
+#Carrosel{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.144);
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.199);
+  background: linear-gradient(
+    rgba(0,0,0,0.6),  /* camada transparente */
+    rgba(0, 0, 0, 0.712)
+  ),
+  url('Banco\ de\ dados/Estrada.JPG');  /* imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  filter: blur();
 }
+
+#Carrosel::content{
+
+}
+
+
 
 /* Todas as imagens dentro do carrossel */
 #Carrosel img {
