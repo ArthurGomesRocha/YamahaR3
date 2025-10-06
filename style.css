@@ -79,12 +79,6 @@ nav{
   filter: blur();
 }
 
-#Carrosel::content{
-
-}
-
-
-
 /* Todas as imagens dentro do carrossel */
 #Carrosel img {
   width: 300px;
@@ -97,13 +91,13 @@ nav{
 
 /* Quando o mouse entra no container, todas as imagens ficam apagadas */
 #Carrosel:hover img {
-  opacity: 0.1;
+    opacity: 0.1;
 }
 
 /* Mas a imagem que está em hover volta ao normal */
 #Carrosel img:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 a{
