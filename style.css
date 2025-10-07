@@ -11,6 +11,15 @@
 #26252a Cinza Black
 #b1b0b5 Cinza escuro
 #d8d8da cinza Claro
+
+
+
+
+#011140 Azul escuro
+#034AA6 Azul
+#035AA6 Azul apagado 
+#16778C Azul oceano
+#21AFBF Azul aceano claro
 */
 *{
     font-family: "Roboto Flex", sans-serif;
@@ -67,10 +76,10 @@ nav{
   padding: 20px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.199);
   background: linear-gradient(
-    rgba(0,0,0,0.6),  /* camada transparente */
+    rgba(0,0,0,0.6),  
     rgba(0, 0, 0, 0.712)
   ),
-  url('Banco\ de\ dados/Estrada.JPG');  /* imagem de fundo */
+  url('Banco\ de\ dados/Estrada.JPG'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -79,7 +88,7 @@ nav{
   filter: blur();
 }
 
-/* Todas as imagens dentro do carrossel */
+
 #Carrosel img {
   width: 300px;
   height: 400px;
@@ -89,12 +98,12 @@ nav{
   cursor: pointer;
 }
 
-/* Quando o mouse entra no container, todas as imagens ficam apagadas */
+
 #Carrosel:hover img {
     opacity: 0.1;
 }
 
-/* Mas a imagem que está em hover volta ao normal */
+
 #Carrosel img:hover {
   opacity: 1;
   transform: scale(1.02);
@@ -108,20 +117,48 @@ a{
 body { 
     background-color: #d8d8da;
     margin: 0px;
+    padding: 0px;
+}
+
+.ContainerIframe{
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.TopIframe{
+    height: 40vh;
+    margin: 20px 0px; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg,#227B96,#64C0DB,#21ABC7, #64C0DB, #227B96);
+    position: relative;
+}
+
+.TopIframe>iframe{
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    scale: 1.1;
+    
+}
+
+iframe:hover{
+    box-shadow: 0px 0px 50px #011140;
+    transition: 2s;
+}
+
+iframe:not(:hover){
+    box-shadow: 0px 0px 15px #034AA6;
+    transition: 2s;
 }
 
 main{
     margin: 0px 0px;
-    padding: 15px;
+    padding: 0px;
     background-image:radial-gradient(circle,Black ,#b1b0b5,#d8d8da 10%)
 }
 
-#H2Main{
-    margin: 10px 0px;
-}
-#H3Main{
-    text-align: justify;
-}
 img{
     width: 300px;      
     height: auto;      
@@ -130,7 +167,6 @@ img{
 }
 #DivMain{
     background-color: #d8d8dae0;
-    padding: 1%;
     margin: 0px 0px ;
     border: 1px solid  #b1b0b5;
     border-radius: 10px;
