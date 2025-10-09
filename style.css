@@ -28,10 +28,12 @@
     font-weight: 350; 
 }
 header{
-    height: 300px;
+    height: 40vh;
     background-image: linear-gradient(90deg,#1F3A8C,#292933);
+
 }
 nav{
+    margin-bottom: 5px;
     background-color: #ffffff;
     height: 10%;
     padding: 1%;
@@ -39,22 +41,46 @@ nav{
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #b1b0b5;
-     box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px black;
 }
 
-#Yamaha{
-    height: 200px;
-    padding: 20px;
-    color: white;
-    text-shadow: 0px 0px 20px black;
-    background-size: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    align-content: center;
-    font-size: 10em;
-    font-weight: 300;
+#CamadasYamaha{
+    position: relative;
 }
+
+#Yamaha::before{
+    position: absolute;
+    content: "YAMAHA";
+    color: #ffffff  ;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    display: block;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    height: 30vh;
+    font-size: 12em;
+    font-weight: 350;
+
+    z-index: 1;
+}
+
+#Yamaha::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(Banco\ de\ dados/LogoYamaha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30vh;
+    width: 500px;
+    filter: blur(1px);
+    z-index: 0;
+    opacity: 0.2;
+}
+
+
 
 
 #Carrosel{
