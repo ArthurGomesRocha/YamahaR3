@@ -1,202 +1,100 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5,243&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/*  
-#1E2759 Azul escuro
-#3B4FBF Azul yamaha 
-#3B79BF Azul claro
-#C1CED9 Cinza claro
-#A4A698 Cinza Bege
-#D9BA82 bege
-#59503E Marrom
-#26252a Cinza Black
-#b1b0b5 Cinza escuro
-#d8d8da cinza Claro
 
+/* Color Theme Swatches in Hex */
+.OnitsukaTiger:-Fencing-1-hex { color: #031D40; }
+.OnitsukaTiger:-Fencing-2-hex { color: #0F50A6; }
+.OnitsukaTiger:-Fencing-3-hex { color: #63BBF2; }
+.OnitsukaTiger:-Fencing-4-hex { color: #F2F2F2; }
+.OnitsukaTiger:-Fencing-5-hex { color: #0D0D0D; }
 
+/* Color Theme Swatches in RGBA */
+.OnitsukaTiger:-Fencing-1-rgba { color: rgba(3, 29, 63, 1); }
+.OnitsukaTiger:-Fencing-2-rgba { color: rgba(14, 80, 165, 1); }
+.OnitsukaTiger:-Fencing-3-rgba { color: rgba(99, 187, 242, 1); }
+.OnitsukaTiger:-Fencing-4-rgba { color: rgba(242, 242, 242, 1); }
+.OnitsukaTiger:-Fencing-5-rgba { color: rgba(12, 12, 12, 1); }
 
+/* Color Theme Swatches in HSLA */
+.OnitsukaTiger:-Fencing-1-hsla { color: hsla(213, 90, 13, 1); }
+.OnitsukaTiger:-Fencing-2-hsla { color: hsla(213, 83, 35, 1); }
+.OnitsukaTiger:-Fencing-3-hsla { color: hsla(202, 84, 66, 1); }
+.OnitsukaTiger:-Fencing-4-hsla { color: hsla(0, 0, 95, 1); }
+.OnitsukaTiger:-Fencing-5-hsla { color: hsla(0, 0, 5, 1); }
 
-#011140 Azul escuro
-#034AA6 Azul
-#035AA6 Azul apagado 
-#16778C Azul oceano
-#21AFBF Azul aceano claro
-*/
 *{
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 350; 
+    text-decoration: none;
 }
-header{
-    height: 40vh;
-    background-image: linear-gradient(90deg,#1F3A8C,#292933);
-
-}
-nav{
-    margin-bottom: 5px;
-    background-color: #ffffff;
-    height: 10%;
-    padding: 1%;
+#MenuNav{
+    padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #b1b0b5;
-    box-shadow: 0px 0px 10px black;
+    justify-content: space-between;
+    background-color: #0F50A6;
+    color: rgb(255, 255, 255);
+    height: 8dvh;
+    padding-left: 5dvh;
+    padding-right: 5dvh;
+}
+#MenuNav Img{
+    height: 40dvh;
+    filter: blur(0.5px);
+    opacity: 0.9;
+}
+#MenuNav a{
+    color: #f2f2f2;
 }
 
-#CamadasYamaha{
-    position: relative;
-}
-
-#Yamaha::before{
-    position: absolute;
-    content: "YAMAHA";
-    color: #ffffff  ;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-    display: block;
-    left: 50%;
-    top: 0%;
-    transform: translate(-50%);
-    height: 30vh;
-    font-size: 12em;
-    font-weight: 350;
-
-    z-index: 1;
-}
-
-#Yamaha::after {
-    position: absolute;
-    content: "";
-    display: block;
-    background-image: url(Banco\ de\ dados/LogoYamaha.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 50%;
-    transform: translate(-50%);
-    height: 30vh;
-    width: 500px;
-    filter: blur(1px);
-    z-index: 0;
-    opacity: 0.03;
+#MenuNav a:hover{
+    color: blue;
+    transform: scale(1.1);
+    background-color: #f2f2f2;
+    padding: 15px;
+    transition: 1s;
+    border-radius: 25%;
 }
 
 
-
-
-#Carrosel{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.199);
-  background: linear-gradient(
-    rgba(0,0,0,0.6),  
-    rgba(0, 0, 0, 0.712)
-  ),
-  url('Banco\ de\ dados/Estrada.JPG'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  color: white;
-  filter: blur();
-}
-
-
-#Carrosel img {
-  width: 300px;
-  height: 400px;
-  margin: auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
-  transition: opacity 0.25s, transform 0.25s;
-  cursor: pointer;
-}
-
-
-#Carrosel:hover img {
-    opacity: 0.1;
-}
-
-
-#Carrosel img:hover {
-  opacity: 1;
-  transform: scale(1.02);
-}
-
-a{
-    margin: 10%;
-    text-decoration: none;
-    color: #26252a;
-}
 body { 
-    background-color: #d8d8da;
+    background-color: #f2f2f2;
     margin: 0px;
     padding: 0px;
 }
 
-.ContainerIframe{
-
-    margin: 10px;
-    border: 1px solid black;
+#PrimeiroSegmento{
+    margin: 20px;
+    padding: 0vw 5vw;
+    text-align: justify;
 }
-.TopIframe{
-    height: 40vh;
-    margin: 20px 0px; 
-    padding: 10px;
+
+ul{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(90deg,#1F3A8C,#292933);
-    position: relative;
+    justify-content: space-between;
 }
 
-.TopIframe>iframe{
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
-    scale: 1.1;
-    
+li{
+    list-style: none;
+    border: 1px solid #0F50A6;
+    background-color: #0f50a652;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
 }
 
-iframe:hover{
-    box-shadow: 0px 0px 50px #011140;
+li:hover{
+    transform: scale(1.1);
     transition: 2s;
 }
 
-iframe:not(:hover){
-    box-shadow: 0px 0px 15px #034AA6;
-    transition: 2s;
-}
 
-.TopContainer{
-    margin: 30px;
-}
-
-#PrimeiroSegmento{
-    margin-top: 10px;
-    background-color: rgba(255, 0, 0, 0.24);
-    text-align: justify;
+aside img{
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
-}
-
-
-#DivMain{
-    height: 300px;
-    background-color: white;
-    padding: 35px;
-    box-shadow: inset 0px 0px 15px black;
-}
-
-#ImgSrc{
-    height: 15vh;
-}
-
-
-footer{
-    background-color: #26252a;
-    text-align: center;
-    align-content: center;
-    color: white;
-    text-align: center;
-    height: 4vh;
+    background-color: wheat;
 }
