@@ -74,10 +74,13 @@ body {
 ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 300px;
+    max-width: 100dvw;
 }
 
 li{
+    max-width: 150px;
     list-style: none;
     border: 1px solid #0F50A6;
     background-color: #0f50a652;
@@ -93,8 +96,9 @@ li:hover{
 
 
 aside img{
-    max-width: 1200px;
+    max-height: 80dvh;
+    max-width: 100dvw;
     margin: auto;
-    padding: 20px;
+
     background-color: wheat;
 }
