@@ -80,7 +80,6 @@ ul{
 }
 
 li{
-    max-width: 150px;
     list-style: none;
     border: 1px solid #0F50A6;
     background-color: #0f50a652;
