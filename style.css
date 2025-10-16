@@ -31,24 +31,32 @@
 }
 #MenuNav{
     padding: 15px;
-    display: inline-block;
-    justify-content: space-between;
+    display: flex;
     background-color: #0F50A6;
     color: rgb(255, 255, 255);
-    height: 8dvh;
-    width: 100%;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
 
 }
 #MenuNav Img{
-    width: 20vw;;
+    width: 25vw;
+    margin: 5px;
     filter: blur(0.3px);
     opacity: 0.8;
 }
+
+#ConjuntoNav{
+    display: flex;
+    height: auto;
+    width: 100%;
+
+}
 #MenuNav a{
-    background-color: yellow;
+    display: inline-flex;
     padding: 10px;
     color: #f2f2f2;
-    margin: 20px;
+    margin: auto;
 }
 
 #MenuNav a:hover{
@@ -96,7 +104,10 @@ li{
 
 li:hover{
     transform: scale(1.1);
-    transition: 2s;
+    transition: 1s;
+    background-color: #0f37a6;
+    color: white;
+    box-shadow: 0px 0px 50px #0f37a642;
 }
 
 aside{
@@ -107,7 +118,7 @@ aside{
     background-position: center center;
     background-attachment: fixed;
     height: auto;
-    width: 99dvw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +137,7 @@ aside img{
     position: absolute;
     Transform: (-50%, -50%);
     max-height: 80dvh;
-    max-width: 100dvw;
+    max-width: 90dvw;
     box-shadow: 0px 0px 50px #0f50a652;
     border: 1px solid #0f50a667;
 }
@@ -135,4 +146,54 @@ aside img:hover{
     transform: scale(1.08);
     transition: 2s;
     cursor: pointer;
+}
+
+table{
+    background-color: #0f50a662;
+    border: 1px solid #0F50A6;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    margin: 30px 0px;
+}
+
+.Galeria{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    
+}   
+
+.Galeria img {
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.Galeria img:hover {
+  transform: scale(1.05);
+}
+
+.MapaYamaha{
+    background-image: url("Banco\ de\ dados/9164808.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
+}
+iframe{
+    height: 40vh;
+    width: 50vw;
+    border-radius: 30px;
+}
+
+footer{
+    background-color: #0D0D0D;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
