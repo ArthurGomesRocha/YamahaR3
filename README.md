@@ -1,4 +1,3 @@
-<html>
-<H1>Clique aqui, acesse o projeto!</H1>
-<a>https://arthurgomesrocha.github.io/YamahaR3/</a> 
-</html>
+# Clique aqui, acesse o projeto!
+
+[Visitar o projeto (Yamaha R3)](https://arthurgomesrocha.github.io/YamahaR3/)
